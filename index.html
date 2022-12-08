@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/3129adec13.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container-fluid">
+            <h1 id="title">Calcula la Densidad de Siembra</h1>
+            <h2>De forma rápida y precisa</h2>
+        </div>
+    </header>
+    <main>
+        
+        <div class="container">
+
+            <form class="row g-2">
+
+                <div class="col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Elige el sistema de siembra</option>
+                        <option value="1">Cuadrado</option>
+                        <option value="2">Doble Surco</option>
+                        <option value="3">Rectángulo</option>
+                        <option value="4">Triangulo</option>
+                        <option value="5">Triple Surco</option>
+                    </select>
+                    <label>Distancia entre plantas (en metros)</label>
+                    <input type="number" class="metrosPlantas" required>
+                    <label>Distancia entre surcos (en metros)</label>
+                    <input type="number" class="metrosSurcos" required>
+                    <label>Distancia entre hileras (en metros)</label>
+                    <input type="number" class="metrosHileras" disabled required>
+                    <label>Cantidad de plantas sembradas</label>
+                    <input type="numer" class="plantasSembradas" required>
+                    <br><br><button type="submit" id="enviar" class="btn btn-primary">Elegir</button>
+                </div>
+
+                <div class="col-md-9 align-self-center">
+
+                    <h3 id="resultado" class="respuesta"></h3>
+
+                </div>
+                
+            </form>
+            
+        </div>
+    </main>
+    <footer>
+        <h6><i class="fa-regular fa-copyright"></i> Derechos reservados Camilo Ardila Gómez.</h6>
+        <p class="pixabay">Imagen de alohamalakhov en Pixabay </p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./index.js" charset="UTF-8"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+header {
+    background-image: url("./Imagenes/hero.png");
+    background-size: cover;;
+    text-align: center;
+    padding: 1.8% 0;
+}
+
+
+h2 {
+    
+    padding: 0.5% 0 0.5%;
+    font-family: 'Merriweather', serif;
+}
+
+main {
+    padding:1% 10%;
+}
+
+.pixabay {
+    font-size: 0.8rem;
+}
+
+.respuesta  {
+    display: none;
+}
+
+h3 {
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+footer {
+    background-color: #CCD6A6;
+    text-align: center;
+    padding: 2% 0 1.5%;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+}
