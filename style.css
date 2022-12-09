@@ -10,6 +10,7 @@ h2 {
     
     padding: 0.5% 0 0.5%;
     font-family: 'Merriweather', serif;
+    color: #FFF;
 }
 
 main {
@@ -20,9 +21,6 @@ main {
     font-size: 0.8rem;
 }
 
-.respuesta  {
-    display: none;
-}
 
 h3 {
     margin-left: 10%;
