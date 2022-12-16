@@ -1,5 +1,5 @@
 
-$(".form-select").click(function actHileras() {
+$(".form-select").change(function actHileras() {
     var sistema =  $(".form-select option:checked" ).val();
 
     if(sistema == 2) {
@@ -10,7 +10,7 @@ $(".form-select").click(function actHileras() {
     
 });
 
-$(".form-select").click(function actSurcos() {
+$(".form-select").change(function actSurcos() {
     var sistema =  $(".form-select option:checked" ).val();
     if (sistema == 5) {
         $(".metrosSurcos").prop("disabled", true);
