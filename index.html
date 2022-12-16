@@ -38,34 +38,42 @@
         
         <div class="container">
 
-            <form class="row g-2">
 
+
+            <form class="row g-2">
+                
                 <div class="col-md-6">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Elige el sistema de siembra</option>
                         <option value="1">Cuadrado</option>
-                        <option value="2">Doble Surco</option>
+                        <option value="2">Multiple Surco</option>
                         <option value="3">Rectángulo</option>
                         <option value="4">Triangulo</option>
-                        <option value="5">Triple Surco</option>
+                        <option value="5">Tres Bolillos</option>
+                        
                     </select>
-                    <br><br><label>Distancia entre plantas (en metros)</label>
-                    <input type="number" class="metrosPlantas" required>
-                    <br><br><label>Distancia entre surcos (en metros)</label>
-                    <input type="number" class="metrosSurcos" required>
-                    <br><br><label>Distancia entre hileras (en metros)</label>
-                    <input type="number" class="metrosHileras" disabled required>
-                    <br><br><label>Cantidad de plantas sembradas</label>
-                    <input type="number" class="plantasSembradas" required>
-                    <br><br><button type="submit" id="enviar" class="btn btn-primary">Elegir</button>
+                    
+                        <label>Distancia entre plantas (en metros)</label>
+                        <input type="number" class="metrosPlantas form-control">
+                        <label>Distancia entre surcos (en metros)</label>
+                        <input type="number" class="metrosSurcos form-control">                    
+                        <label>Distancia entre hileras (en metros)</label>
+                        <input type="number" class="metrosHileras desaparece form-control" disabled>                    
+                        <label class="desaparece">Numero de hileras encontradas</label>
+                        <input type="number" class="numHileras desaparece form-control" disabled>                    
+                        <label>Cantidad de plantas sembradas</label>
+                        <input type="number" class="plantasSembradas form-control">
+                    
+                    
+                    <br><br><button type="submit" id="enviar" class="btn btn-primary">Calcular</button>
                 </div>
 
                 <div class="col-md-6 align-self-center">
 
-                    <h3 id="resultado" class="respuesta">Diligencia todos los campos y oprime Enviar. </h3>
+                    <h3 id="resultado" class="respuesta">Diligencia todos los campos y oprime Calcular. </h3>
 
                 </div>
-                
+            
             </form>
             
         </div>
