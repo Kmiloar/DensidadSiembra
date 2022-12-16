@@ -47,3 +47,8 @@ h1 {
     padding: 5% 10%;
 }
 
+@media (max-width: 768px) {
+    #resultado {
+        padding: 7% 0;
+    }
+}
